@@ -1,7 +1,9 @@
 import csv
 import vobject
 
-# Usando apenas o nome do arquivo já que está na mesma pasta
+#adicione o arquivo diretamnete a esta pasta "convert - csv"
+
+# troque "contato.vcf" pelo seu arquivo vcf adicionado a pasta 
 with open('contato.vcf', 'r', encoding='latin-1') as vcf_file:
     vcf_data = vobject.readComponents(vcf_file.read())
 
